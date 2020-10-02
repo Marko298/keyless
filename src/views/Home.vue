@@ -11,34 +11,38 @@
     <ion-content :fullscreen="true">
       <div id="container">
         <strong>Is Keyless working?</strong>
-        <div style="margin-top: 1rem">
+
+        <div>
           Monitoring enabled:
           <span style="color: green" v-if="isMonitoring">Yes</span>
           <span style="color: red" v-else>No</span>
         </div>
-        <div style="margin-top: 1rem">
+
+        <div>
           In region:
           <span style="color: green" v-if="inRegion">Yes</span>
           <span style="color: red" v-else>No</span>
         </div>
-        <div style="margin-top: 1rem">
+
+        <div>
           Is ranging:
           <span style="color: green" v-if="isRanging">Yes</span>
           <span style="color: red" v-else>No</span>
         </div>
-        <div style="margin-top: 1rem">
+
+        <div>
           Is near:
           <span style="color: green" v-if="isNear">Yes</span>
           <span style="color: red" v-else>No</span>
         </div>
 
-        <div style="margin-top: 1rem">
+        <div>
           RSSI: {{ beaconState?.rssi }}<br>
           Accuracy: {{ beaconState?.accuracy }}<br>
           Proximity: {{ beaconState?.proximity }}<br>
         </div>
 
-        <div style="margin-top: 1rem">
+        <div>
           Last request: {{ lastRequest }}
         </div>
 
@@ -184,7 +188,12 @@ export default defineComponent({
 }
 
 #container strong {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+#container div {
+  /*text-align: left;*/
+  margin-top: 1rem
 }
 </style>
