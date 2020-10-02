@@ -1,0 +1,7 @@
+{
+  "name": "keyless-client",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
