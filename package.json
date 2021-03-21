@@ -3,11 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve-on-iphone": "ionic capacitor run ios -l --external",
+    "build-ios": "ionic cap sync",
     "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "ionic:build": "vue-cli-service build",
+    "ionic:serve": "vue-cli-service serve"
   },
   "dependencies": {
     "@capacitor/core": "2.4.2",
@@ -16,9 +20,11 @@
     "@ionic-native/ibeacon": "^5.28.0",
     "@ionic/vue": "^0.5.2",
     "@ionic/vue-router": "^0.5.2",
+    "axios": "github:axios/axios",
     "cordova-plugin-device": "^2.0.3",
     "cordova-plugin-ibeacon": "^3.8.1",
     "core-js": "^3.6.5",
+    "moment": "^2.29.1",
     "vue": "^3.0.0-0",
     "vue-router": "^4.0.0-0"
   },
